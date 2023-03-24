@@ -1,0 +1,12 @@
+key:5 key:3 key:6 
+insertion(6) failed : the key already exists in the list
+insertion(1) failed : can not find the location to be inserted
+key:2 key:5 key:3 key:6 
+key of the previous node of 2 is head
+key of the previous node of 5 is 2
+finding(4) failed : element 4 is not in the list
+key of the previous node of 3 is 5
+key of the previous node of 6 is 3
+key:2 key:5 key:3 key:6 
+deletion(1) failed : element 1 is not in the list
+key:5 key:6 
