@@ -1,0 +1,14 @@
+insert 1 into address 1
+insert 11 into address 0
+insert 4 into address 4
+insert 15 into address 5
+insert 22 into address 2
+64 is not in the table
+insertion error: 22 already exists at address 2
+insert 9 into address 9
+insert 18 into address 7
+insert 77 into address 3
+insert 16 into address 6
+delete 4
+delete 18
+deletion Error: 85 is not in the table

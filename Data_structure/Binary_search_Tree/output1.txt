@@ -1,0 +1,14 @@
+insert 10
+insert 6
+insert 20
+insert 15
+insert 23
+insert 11
+insert 16
+insert 13
+insertion error: 11 is already in the tree
+6 10 11 13 15 16 20 23 
+16 is in the tree
+15 is in the tree
+delete 10
+6 11 13 15 16 20 23 

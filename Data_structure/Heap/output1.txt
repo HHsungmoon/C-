@@ -1,0 +1,21 @@
+print error : heap is empty
+delete error : heap is empty
+insert 10
+insert 15
+insert 23
+insert 7
+insert 60
+insert 50
+60 23 50 7 10 15 
+insert 20
+insert 40
+insert 28
+insert 35
+insert error : heap is full
+60 40 50 28 35 15 20 7 23 10 
+max element : 60 deleted
+50 40 20 28 35 15 10 7 23 
+max element : 50 deleted
+40 35 20 28 23 15 10 7 
+max element : 40 deleted
+35 28 20 7 23 15 10 
