@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// [로테이트 4가지] [x] [y]
+// 로테이트 4가지 [x] [y]
 // 로테이트 3가지 T,J,L
 
 const int Block_T[4][4][4] = {
@@ -89,7 +89,7 @@ const int Block_L[4][4][4] = {
 	}
 };
 
-// 로테이트 2가지 Z,S,I
+// 로테이트 2가지 I,Z,S
 const int Block_I[4][4][4] = {
 	{
 		{0,0,0,0},
@@ -226,6 +226,7 @@ int TBlock::getX() { return this->tb_x;}
 int TBlock::getY() {return this->tb_y;}
 int TBlock::getRotationCount(){return rotate_cnt;}
 
+// 현재 블록 모양 데이터를 가져온다. 
 vector<vector<int>> TBlock::get_shape()
 {
 	vector<vector<int>> block_shape(4, vector<int>(4, 0));
@@ -240,6 +241,7 @@ vector<vector<int>> TBlock::get_shape()
 	return block_shape;
 }
 
+// 블록이 왼쪽으로 이동할 수 있는지 체크하는 함수
 bool TBlock::Left_Move_possible(vector<vector<int>> board)
 {
 	for (int y = 0; y < 4; y++)
@@ -255,6 +257,7 @@ bool TBlock::Left_Move_possible(vector<vector<int>> board)
 	}
 	return true;
 }
+// 블록이 오른쪽으로 이동할 수 있는지 체크하는 함수
 bool TBlock::Right_Move_possible(vector<vector<int>> board)
 {
 	for (int y = 0; y < 4; y++)
@@ -270,6 +273,8 @@ bool TBlock::Right_Move_possible(vector<vector<int>> board)
 	}
 	return true;
 }
+
+//블록이 아래쪽으로 이동할 수 있는지 체크하는 함수
 bool TBlock::Down_Move_possible(vector<vector<int>> board)
 {
 	for (int y = 0; y < 4; y++)
@@ -305,7 +310,7 @@ void TBlock::move_right()
 	block_print();
 }
 
-
+// 블록을 오른쪽,왼쪽 으로 Rotate가능한지 체크하는 함수.
 bool TBlock::Rotation_possible(int tmp, vector<vector<int>> board)
 {
 	for (int y = 0; y < 4; y++)

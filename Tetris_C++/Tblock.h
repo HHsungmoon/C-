@@ -18,6 +18,7 @@ extern const int Block_S[4][4][4];
 // 로테이트 1가지 O
 extern const int Block_O[4][4][4];
 
+//  Left_Move_possible, Right_Move_possible, Rotation_possible 세가지 함수는 다른 public함수 내에서 사용하기 때문에 private로 선언해 줘도 괜찮다.
 class TBlock
 {
 private:
@@ -31,7 +32,6 @@ private:
 public:
 	TBlock();
 	TBlock(int block_num, int rotation, int s_x, int s_y, const int block[4][4][4], Color color); // start_x, start_y
-	
 	
 	int getX();
 	int getY();

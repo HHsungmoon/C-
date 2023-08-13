@@ -8,6 +8,7 @@
 
 using namespace std;
 
+// 게임 시작전 메뉴를 출력
 void Print_Menu()
 {
 	cout << "\n\n\n\n";
@@ -32,6 +33,7 @@ void Print_Menu()
 	clear_screen();
 }
 
+// main함수에 선언된 크기 만큼 board를 만듬
 vector<vector<int>> make_board(int tb_x, int tb_y)
 {
 	vector<vector<int>>board(tb_y, vector<int>(tb_x));
